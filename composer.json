@@ -1,0 +1,31 @@
+{
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "name": "enlitepro/enlite-russellInterpreter",
+    "keywords": [
+        "framework",
+        "zendframework2",
+        "zf2",
+        "parser",
+        "math",
+        "interpretator"
+    ],
+    "authors": [
+        {
+            "name": "Vladimir Struts",
+            "email": "Sysaninster@gmail.com"
+        }
+    ],
+    "require": {
+        "php":                                  ">=5.0",
+        "zendframework/zendframework":          "2.2.*"
+    },
+    "require-dev": {
+        "enlitepro/zf2-scaffold":               "~1.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "RussellInterpreter": "src"
+        }
+    }
+}
