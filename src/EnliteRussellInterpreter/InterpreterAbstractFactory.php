@@ -94,6 +94,12 @@ class InterpreterAbstractFactory implements AbstractFactoryInterface
      */
     public function createServiceWithName(ServiceLocatorInterface $serviceLocator, $name, $requestedName)
     {
-        // TODO: Implement createServiceWithName() method.
+        $manager = new InterpreterManager();
+        $manager->setOptions($this->getOptions($serviceLocator, $requestedName));
+        $manager->setExtensionsManager(
+            $serviceLocator->get('EnliteRussellInterpreterExtensionsManager')
+        );
+
+        return $manager;
     }
 }
