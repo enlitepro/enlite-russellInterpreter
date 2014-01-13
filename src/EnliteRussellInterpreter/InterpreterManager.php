@@ -195,9 +195,10 @@ class InterpreterManager {
      * Run script from a string
      *
      * @param string $scriptCode
+     * @param array $withVariables
      * @return bool
      */
-    public function runScript($scriptCode)
+    public function runScript($scriptCode, $withVariables = [])
     {
         $this->getLexer()->setParserTree(
             new ParserTree()
@@ -206,6 +207,7 @@ class InterpreterManager {
 
         $interpreter = $this->getInterpreter();
         $interpreter->clear();
+        $interpreter->setVariables($withVariables);
         $result = $interpreter->execute($tree);
 
         return $result;
