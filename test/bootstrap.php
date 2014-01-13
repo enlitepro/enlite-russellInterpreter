@@ -1,5 +1,5 @@
 <?php
-namespace RussellInterpreterTest;
+namespace EnliteRussellInterpreterTest;
 
 use RuntimeException;
 use Zend\Loader\AutoloaderFactory;

@@ -2,7 +2,7 @@
 
 return array(
     'modules' => array(
-        'RussellInterpreter',
+        'EnliteRussellInterpreter',
     ),
     'module_listener_options' => array(
         'module_paths' => array(

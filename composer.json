@@ -1,14 +1,14 @@
 {
     "license": "MIT",
     "minimum-stability": "stable",
-    "name": "enlitepro/enlite-russellInterpreter",
+    "name": "enlitepro/enlite-russell-interpreter",
     "keywords": [
         "framework",
         "zendframework2",
         "zf2",
         "parser",
         "math",
-        "interpretator"
+        "interpreter"
     ],
     "authors": [
         {
@@ -17,15 +17,16 @@
         }
     ],
     "require": {
-        "php":                                  ">=5.0",
-        "zendframework/zendframework":          "2.2.*"
+        "php":                                  ">=5.4",
+        "zendframework/zendframework":          "2.2.*",
+        "enlitepro/russell-interpreter":        "dev-master"
     },
     "require-dev": {
         "enlitepro/zf2-scaffold":               "~1.0.0"
     },
     "autoload": {
         "psr-0": {
-            "RussellInterpreter": "src"
+            "EnliteRussellInterpreter": "src"
         }
     }
 }

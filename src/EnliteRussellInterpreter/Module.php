@@ -1,6 +1,6 @@
 <?php
 
-namespace RussellInterpreter;
+namespace EnliteRussellInterpreter;
 
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;

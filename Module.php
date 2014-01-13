@@ -1,3 +1,3 @@
 <?php
 
-require __DIR__ . "/src/RussellInterpreter/Module.php";
+require __DIR__ . "/src/EnliteRussellInterpreter/Module.php";
