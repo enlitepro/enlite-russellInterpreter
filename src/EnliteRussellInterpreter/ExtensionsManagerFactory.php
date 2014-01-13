@@ -12,6 +12,7 @@
 namespace EnliteRussellInterpreter;
 
 
+use Zend\ServiceManager\Config;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
@@ -27,11 +28,10 @@ class ExtensionsManagerFactory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         $config = $serviceLocator->get('Config');
-        $manager = new ExtensionsManager(
-            isset($config['EnliteRussellInterpreterExtensionsManager'])
-                ? $config['EnliteRussellInterpreterExtensionsManager']
-                : []
-        );
+        $managerConfig = new Config(isset($config['EnliteRussellInterpreterExtensionsManager'])
+            ? $config['EnliteRussellInterpreterExtensionsManager']
+            : []);
+        $manager = new ExtensionsManager($managerConfig);
 
         return $manager;
     }

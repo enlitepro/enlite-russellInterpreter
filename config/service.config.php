@@ -3,7 +3,7 @@
 return array(
     'service_manager' => array(
         'factories' => array(
-            'EnliteRussellInterpreterExtensionsManager' => 'EnliteRussellInterpreter\ExtensionsManager'
+            'EnliteRussellInterpreterExtensionsManager' => 'EnliteRussellInterpreter\ExtensionsManagerFactory'
         ),
         'invokables' => array(
             
