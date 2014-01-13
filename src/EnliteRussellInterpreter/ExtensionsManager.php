@@ -12,6 +12,8 @@
 namespace EnliteRussellInterpreter;
 
 
+use EnliteRussellInterpreter\Exception\RuntimeException;
+use RussellInterpreter\ExtensionInterface;
 use Zend\ServiceManager\AbstractPluginManager;
 use Zend\ServiceManager\Exception;
 
@@ -26,11 +28,13 @@ class ExtensionsManager extends AbstractPluginManager
      *
      * @param  mixed $plugin
      * @return void
-     * @throws Exception\RuntimeException if invalid
+     * @throws RuntimeException if invalid
      */
     public function validatePlugin($plugin)
     {
-        // TODO: Implement validatePlugin() method.
+        if (! $plugin instanceof ExtensionInterface) {
+            throw new RuntimeException('Plugin must be instance of ExtensionInterface');
+        }
     }
 
 }

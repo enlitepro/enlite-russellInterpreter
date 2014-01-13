@@ -29,6 +29,10 @@ class ExtensionsManagerFactory implements FactoryInterface
         $config = $serviceLocator->get('Config');
         $manager = new ExtensionsManager(
             isset($config['EnliteRussellInterpreterExtensionsManager'])
+                ? $config['EnliteRussellInterpreterExtensionsManager']
+                : []
         );
+
+        return $manager;
     }
 }
