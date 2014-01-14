@@ -19,7 +19,7 @@
     "require": {
         "php":                                  ">=5.4",
         "zendframework/zendframework":          "2.2.*",
-        "enlitepro/russell-interpreter":        "~1.0.0"
+        "enlitepro/russell-interpreter":        "~1.0.1"
     },
     "require-dev": {
         "enlitepro/zf2-scaffold":               "~1.0.0"

@@ -46,6 +46,18 @@ class InterpreterManager {
         'multiplication' => array('multi', 'multiplication'),
         'random' => array('rand', 'random'),
         'array' => array('arr', 'array'),
+        'cycle' => array('cycle', 'while'),
+        'until' => array('until'),
+        'true' => array('isTrue', 'true'),
+        'false' => array('isFalse', 'false'),
+        'increment' => array('increment'),
+        'decrement' => array('decrement'),
+        'equal' => array('equal'),
+        'notEqual' => array('notequal', 'not_equal'),
+        'conditionalOperator' => array('if'),
+        'conjunction' => array('disjunction', 'and'),
+        'disjunction' => array('disjunction', 'or'),
+        'negation' => array('negation', 'not'),
     ];
 
     /**

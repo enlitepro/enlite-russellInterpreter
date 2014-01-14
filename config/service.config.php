@@ -20,7 +20,20 @@ return array(
             'division' => 'RussellInterpreter\Extension\Division',
             'multiplication' => 'RussellInterpreter\Extension\Multiplication',
             'random' => 'RussellInterpreter\Extension\Random',
-            'array' => 'RussellInterpreter\Extension\Arr'
+            'array' => 'RussellInterpreter\Extension\Arr',
+            'cycle' => 'RussellInterpreter\Extension\Cycle',
+            'until' => 'RussellInterpreter\Extension\Until',
+            'true' => 'RussellInterpreter\Extension\True',
+            'false' => 'RussellInterpreter\Extension\False',
+            'increment' => 'RussellInterpreter\Extension\Increment',
+            'decrement' => 'RussellInterpreter\Extension\Decrement',
+            'equal' => 'RussellInterpreter\Extension\Equal',
+            'notEqual' => 'RussellInterpreter\Extension\NotEqual',
+            'conditionalOperator' => 'RussellInterpreter\Extension\ConditionalOperator',
+            'conjunction' => 'RussellInterpreter\Extension\Conjunction',
+            'disjunction' => 'RussellInterpreter\Extension\Disjunction',
+            'negation' => 'RussellInterpreter\Extension\Negation',
+
         )
     )
 );
