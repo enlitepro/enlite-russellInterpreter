@@ -28,11 +28,21 @@ return array(
             'increment' => 'RussellInterpreter\Extension\Increment',
             'decrement' => 'RussellInterpreter\Extension\Decrement',
             'equal' => 'RussellInterpreter\Extension\Equal',
-            'notEqual' => 'RussellInterpreter\Extension\NotEqual',
-            'conditionalOperator' => 'RussellInterpreter\Extension\ConditionalOperator',
+            'not_equal' => 'RussellInterpreter\Extension\NotEqual',
+            'conditional_operator' => 'RussellInterpreter\Extension\ConditionalOperator',
             'conjunction' => 'RussellInterpreter\Extension\Conjunction',
             'disjunction' => 'RussellInterpreter\Extension\Disjunction',
             'negation' => 'RussellInterpreter\Extension\Negation',
+            'plural' => 'RussellInterpreter\Extension\Plural',
+            'concatenation' => 'RussellInterpreter\Extension\Concatenation',
+            'greater' => 'RussellInterpreter\Extension\Greater',
+            'greater_or_equal' => 'RussellInterpreter\Extension\Greaterorequal',
+            'less' => 'RussellInterpreter\Extension\Less',
+            'less_or_equal' => 'RussellInterpreter\Extension\Lessorequal',
+            'modulo' => 'RussellInterpreter\Extension\Modulo',
+            'random_argument' => 'RussellInterpreter\Extension\RandomArgument',
+            'square_root' => 'RussellInterpreter\Extension\SquareRoot',
+            'exponential' => 'RussellInterpreter\Extension\Exponential',
 
         )
     )

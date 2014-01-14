@@ -53,11 +53,21 @@ class InterpreterManager {
         'increment' => array('increment'),
         'decrement' => array('decrement'),
         'equal' => array('equal'),
-        'notEqual' => array('notequal', 'not_equal'),
-        'conditionalOperator' => array('if'),
+        'not_equal' => array('notequal', 'not_equal', 'not_equal'),
+        'conditional_operator' => array('if'),
         'conjunction' => array('disjunction', 'and'),
         'disjunction' => array('disjunction', 'or'),
         'negation' => array('negation', 'not'),
+        'plural' => array('plural'),
+        'concatenation' => array('concatenation', 'concat'),
+        'greater' => array('greater', 'gt'),
+        'greater_or_equal' => array('greater_or_equal', 'gteq'),
+        'less' => array('less', 'ls'),
+        'less_or_equal' => array('less_or_equal', 'lseq'),
+        'modulo' => array('modulo', 'mod'),
+        'random_argument' => array('random_argument', 'rand_arg'),
+        'square_root' => array('square_root', 'sqrt'),
+        'exponential' => array('exponential', 'pow'),
     ];
 
     /**
